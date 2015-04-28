@@ -37,6 +37,14 @@ gem 'spring',        group: :development
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+group :test do
+	gem 'selenium-webdriver'
+end
+group :development, :test do 
+	gem 'rspec-rails'
+	gem 'capybara'
+end
+
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
