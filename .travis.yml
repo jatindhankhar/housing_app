@@ -3,9 +3,6 @@ rvm:
   - 1.9.3
   - 2.1.0
   - ruby-head
-  - jruby-head
   - 2.0.0
-jdk:
-  - openjdk7
 env:
   - DB=sqlite
