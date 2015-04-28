@@ -12,3 +12,5 @@ script:
   - bundle exec rake db:test:prepare
   - bundle exec rake test
   - bundle exec rails s
+after_success:
+  - coveralls
