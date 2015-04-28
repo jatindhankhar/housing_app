@@ -1,0 +1,61 @@
+<div class="row">
+        <div class="large-3 columns">
+          <h1><img src="http://placehold.it/400x100&text=Logo"></h1>
+        </div>
+        <div class="large-9 columns">
+          <ul class="button-group right">
+            <li><a href="/" class="button">Home</a></li>
+            <li><a href="/posts" class="button">Posts</a></li>
+            <li><a href="/flats" class="button">Flats</a></li>
+            <li><a href="/users/register" class="button">Register</a></li>
+          </ul>
+        </div>
+      </div>
+<div class="row">
+<h1>Listing posts</h1>
+<div class="large-3 columns ">
+          
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @posts.each do |post| %>
+      <tr>
+        <td><%= post.Name %></td>
+        <td><%= post.Description %></td>
+        <td><%= link_to 'Show', post %></td>
+        <td><%= link_to 'Edit', edit_post_path(post) %></td>
+        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+
+</div>
+<center><div class="button"><%= link_to 'New Post', new_post_path %></div></center>
+
+<footer class="row">
+        <div class="large-12 columns">
+          <hr/>
+          <div class="row">
+            <div class="large-6 columns">
+              <p>© Copyright no one at all.</p>
+            </div>
+            <div class="large-6 columns">
+              <ul class="inline-list right">
+                <li><a href="/" class="button">Home</a></li>
+            <li><a href="/posts" class="button">Posts</a></li>
+            <li><a href="/flats" class="button">Flats</a></li>
+            <li><a href="/users/register" class="button">Register</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>

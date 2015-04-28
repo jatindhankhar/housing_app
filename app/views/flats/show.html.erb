@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @flat.Name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @flat.Address %>
+</p>
+
+<p>
+  <strong>Rentaldate:</strong>
+  <%= @flat.RentalDate %>
+</p>
+
+<p>
+  <strong>Occupied:</strong>
+  <%= @flat.Occupied %>
+</p>
+
+<%= link_to 'Edit', edit_flat_path(@flat) %> |
+<%= link_to 'Back', flats_path %>
