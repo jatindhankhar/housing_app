@@ -7,6 +7,5 @@ rvm:
   - 2.0.0
 jdk:
   - openjdk7
-  - openjdk8
 env:
   - DB=sqlite
