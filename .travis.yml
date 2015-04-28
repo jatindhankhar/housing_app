@@ -1,0 +1,12 @@
+language: ruby
+rvm:
+  - 1.9.2
+  - jruby-18mode
+  - jruby-19mode
+  - jruby-head
+jdk:
+  - openjdk6
+  - openjdk7
+  - oraclejdk7
+env:
+  - DB=sqlite
