@@ -2,12 +2,11 @@ language: ruby
 rvm:
   - 1.9.3
   - 2.1.0
-  - jruby-19mode
   - ruby-head
   - jruby-head
   - 2.0.0
 jdk:
-  - openjdk6
   - openjdk7
+  - openjdk8
 env:
   - DB=sqlite
