@@ -9,7 +9,7 @@
 
 ## Project Members
 
-* Jatin Dhankhar (me)
+* Jatin Dhankhar
 * Pawan Pandey 
 * Abhinav Maurya
 * Mayank Kulshresta
